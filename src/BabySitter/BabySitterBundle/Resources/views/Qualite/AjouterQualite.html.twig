@@ -1,0 +1,23 @@
+{% extends "BabySitterBundle::layout.html.twig" %}
+{% block qualite %}
+
+<form method="POST">
+<h2>Ajout Qualite </h2>
+    <table>
+        <tr>
+            <td>Nom  : </td>
+            <td>{{ form_widget(form.nom_qualite) }}</td>
+        </tr>
+        <tr>
+            <td>Description : </td>
+            <td>{{ form_widget(form.descriptionQ) }}</td>
+        </tr>
+       
+       <tr>
+            <td>    <input type="submit" name="submit" value="Ajouter"/> </td>
+            <td></td>
+        </tr>
+    </table>
+       {{ form_rest(form) }}  
+</form> 
+{% endblock %}

@@ -1,0 +1,97 @@
+baby_sitter_homepage:
+    path:     /
+    defaults: { _controller: BabySitterBundle:Default:index }
+ajout_babySitter:
+    path:     /ajouterB
+    defaults: { _controller: BabySitterBundle:BabySitter:ajouterBabySitter }
+affichage_babySitter:
+    path:     /afficherB
+    defaults: { _controller: BabySitterBundle:BabySitter:affichagerBabySitterSitter }
+modifier_babySitter:
+    path:     /modifierB/{id}
+    defaults: { _controller: BabySitterBundle:BabySitter:modifierBabySitter }
+supprimer_babySitter:
+    path:     /supprimerB/{id}
+    defaults: { _controller: BabySitterBundle:BabySitter:supprimerBabySitter }
+recherche_babySitter:
+    path:     /rechercherB
+    defaults: { _controller: BabySitterBundle:BabySitter:rechercherBabySitter }
+map_babySitter:
+    path:     /mapB
+    defaults: { _controller: BabySitterBundle:Default:index }
+affichage_annonce:
+    path:     /afficherA
+    defaults: { _controller: BabySitterBundle:Annonce:afficherAnnonce }
+ajouter_annonce:
+    path:     /ajouterA
+    defaults: { _controller: BabySitterBundle:Annonce:ajouterAnnonce }
+modifier_annonce:
+    path:     /modifierA/{id}
+    defaults: { _controller: BabySitterBundle:Annonce:modifierAnnonce }
+supprimer_annonce:
+    path:     /supprimerA/{id}
+    defaults: { _controller: BabySitterBundle:Annonce:supprimerAnnonce }
+rechercher_annonce:
+    path:     /rechercherA
+    defaults: { _controller: BabySitterBundle:Annonce:rechercherAnnonce }
+home_babySitter:
+    path:     /home
+    defaults: { _controller: BabySitterBundle:Default:home }
+inscription_babySitter:
+    path:     /inscriptionBabySitter
+    defaults: { _controller: BabySitterBundle:Default:InscriptionBabySitter }
+profile_babySitter:
+    path:     /profileBabySitter
+    defaults: { _controller: BabySitterBundle:Default:profileBabySitter }
+contact_babySitter:
+    path:     /contactBabySitter
+    defaults: { _controller: BabySitterBundle:Default:contactBabySitter }
+baby_sitter_homepage:
+    path:     /
+    defaults: { _controller: BabySitterBundle:Default:index }
+afef:
+    path:     /mp3
+    defaults: { _controller: BabySitterBundle:Default:mp3 }
+baby_sitter_AjouterQualite:
+    path:     /ajouterQualite
+    defaults: { _controller: BabySitterBundle:Qualite:ajouterQualite }
+
+baby_sitter_AjouterResponsabilite:
+    path:     /ajouterResponsabilite
+    defaults: { _controller: BabySitterBundle:Responsabilite:ajouterResponsabilite }
+supprimer_qualite:
+    path:     /supprimerQualite/{id}
+    defaults: { _controller: BabySitterBundle:Qualite:supprimerQualite }
+supprimer_responsabilite:
+    path:     /supprimerResponsabilite/{id}
+    defaults: { _controller: BabySitterBundle:Responsabilite:supprimerResponsabilite }
+affichage_qualite:
+    path:     /afficherQualite
+    defaults: { _controller: BabySitterBundle:Qualite:afficherQualite }
+affichage_responsabilite:
+    path:     /afficherResponsabilite
+    defaults: { _controller: BabySitterBundle:Responsabilite:afficherResponsabilite }
+modifier_qualite:
+    path:     /modifierQualite/{id}
+    defaults: { _controller: BabySitterBundle:Qualite:modifierQualite }
+modifier_responsabilite:
+    path:     /modifierResponsabilite/{id}
+    defaults: { _controller: BabySitterBundle:Responsabilite:modifierResponsabilite }
+supprimer_evaluation:
+    path:     /supprimerEvaluation/{id}
+    defaults: { _controller: BabySitterBundle:Evaluation:supprimerEvaluation }
+ajouter_responsabilite:
+    path:     /ajouterResponsabilite
+    defaults: { _controller: BabySitterBundle:Responsabilite:ajouterResponsabilite }
+ajouter_Evaluation:
+    path:     /ajouterEvaluation
+    defaults: { _controller: BabySitterBundle:Evaluation:ajouterEvaluation }
+modifier_evaluation:
+    path:     /modifierEvaluation/{id}
+    defaults: { _controller: BabySitterBundle:Evaluation:modifierEvaluation }
+affichage_evaluation:
+    path:     /afficherEvaluation
+    defaults: { _controller: BabySitterBundle:Evaluation:afficherEvaluation }
+profileEvaluation:
+    path:     /listEvaluation
+    defaults: { _controller: BabySitterBundle:Evaluation:listEvaluation }

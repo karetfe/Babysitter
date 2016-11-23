@@ -1,0 +1,22 @@
+{# empty Twig template #}
+{% extends 'BabySitterBundle::Layout_profile.html.twig' %} 
+    {% block aboutUs  %}
+ <form method="POST">
+        <table>
+            <tr> <td> titreOffre : <input type ="text" name="titreOffre" /></td></tr>
+            <tr> <td> nbrEnfant : <input type ="text" name="nbrEnfant" /></td></tr>
+            <tr> <td> ageEnfant : <input type="text" name="ageEnfant" value=""/></td></tr>
+            <tr> <td> description : <input type="text" name="description" value=""/></td></tr>
+            <tr> <td> typePlanification : <input type="text" name="typePlanification" value=""/></td></tr>
+            <tr> <td> dateDebutOffre: <input type ="text" name="dateDebutOffre" /></td></tr>
+            <tr> <td> dateFinOffre : <input type ="text" name="dateFinOffre" /></td></tr>
+            <tr> <td> tarif : <input type ="text" name="tarif" /></td></tr>
+           
+            
+        </table>
+     
+         <a href="{{ path('baby_sitter_AjouterResponsabilite') }}" class="button">Responsabilite</a>
+         <a href="{{ path('baby_sitter_AjouterQualite') }}" class="button">Qualite</a>
+         <input type="submit" value="Ajouter" name="ajouter"/>
+    </form>
+ {% endblock %}

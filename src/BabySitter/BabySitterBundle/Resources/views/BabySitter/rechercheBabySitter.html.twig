@@ -1,0 +1,23 @@
+{# empty Twig template #}
+<h1>Recherche BabySitter </h1>
+<form action="" method="POST">
+    Recherche par nationnalite :  <input type="text" name="nationalite"/>
+    <input type="submit" value="Recherche">
+</form>
+   <table border="2">
+    <tr> <td>Nom</td> <td>Prenom</td> <td>Sex</td> <td>Date Naissance</td> <td>Email</td> <td>Adresse</td> <td>Numero Telephone</td> <td>Code Postal</td><td>Nationnalite</td></tr>
+    
+    {% for b in BabySitter %}
+        <tr>
+            <td>{{b.nom}}</td>
+            <td>{{b.prenom}}</td>
+            <td>{{b.dateDeNaissance}}</td>
+            <td>{{b.sex}}</td>
+            <td>{{b.email}}</td>
+            <td>{{b.adresse}}</td>
+            <td>{{b.numeroTel}}</td>
+            <td>{{b.codePostal}}</td>
+            <td>{{b.nationalite}}</td>
+        </tr>
+    {% endfor %}
+</table>

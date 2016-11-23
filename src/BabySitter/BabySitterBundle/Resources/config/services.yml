@@ -1,0 +1,4 @@
+services:
+#    baby_sitter.example:
+#        class: BabySitter\BabySitterBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

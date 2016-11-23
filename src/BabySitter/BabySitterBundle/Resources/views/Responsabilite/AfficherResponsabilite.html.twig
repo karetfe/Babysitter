@@ -1,0 +1,21 @@
+{% extends "BabySitterBundle::layout.html.twig" %}
+{% block qualite %}
+<h1></h1>
+<Table border="1">
+    <tr> <td>Nom</td> <td>Description</td><td>Modification</td><td>Suppression</td></tr>
+{% for a in Responsabilites %}
+        <tr>
+            <td> {{ a.nomresponsabilite }}</td>
+            <td> {{ a.descriptionR }}</td>
+            
+                        
+            <td><a href="{{ path('modifier_responsabilite',{id:a.idResponsabbilite}) }}" target="_blank">modifier</a></td>
+            <td><a href="{{ path('supprimer_responsabilite',{id:a.idResponsabbilite}) }}" target="_blank">supprimer</a></td>
+
+        </tr>
+    {% else %}
+    <strong> La liste des Responsabilites est vide </strong>
+    {% endfor %}
+</table>
+        
+{% endblock %}

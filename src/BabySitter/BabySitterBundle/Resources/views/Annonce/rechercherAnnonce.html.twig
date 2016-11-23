@@ -1,0 +1,18 @@
+{# empty Twig template #}
+<h1>Recherche Annonce </h1>
+<form action="" method="POST">
+    Recherche par titre :  <input type="text" name="titre_annonce"/>
+    <input type="submit" value="Recherche">
+</form>
+   <table border="2">
+    <tr> <td>Titre</td> <td>Description</td> <td>Disponibilite</td> <td>Date</td></tr>
+    
+    {% for a in Annonce %}
+        <tr>
+            <td>{{a.titreAnnonce}}</td>
+            <td>{{a.description}}</td>
+            <td>{{a.disponibilite}}</td>
+            <td>{{a.annonceDate}}</td>
+        </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,23 @@
+{# empty Twig template #}
+{%extends "BabySitterBundle::layout.html.twig"%}
+{% block qualite %}
+<form method="POST" action="{{ path('modifier_qualite',{id:qualite.idQualite}) }}">
+    <h2>Modifier Qualite </h2>
+    <table>
+        <tr>
+            <td>Nom : </td>
+            <td>{{ form_widget(form.nom_qualite) }}</td>
+        </tr>
+        <tr>
+            <td>Description : </td>
+            <td>{{ form_widget(form.descriptionQ) }} </td>
+        </tr>  
+        
+        <tr>
+            <td>     <input type="submit" value="Modifier" name="modifier"/> </td>
+            <td></td>
+        </tr>
+    </table>
+    {{ form_rest(form) }}
+</form>
+{% endblock%}

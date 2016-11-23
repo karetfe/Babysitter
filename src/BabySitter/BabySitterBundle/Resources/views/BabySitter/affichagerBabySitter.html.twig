@@ -1,0 +1,24 @@
+{# empty Twig template #}
+<Table border="1">
+    <tr> <td>Nom</td> <td>Prenom</td> <td>Sex</td> <td>Date Naissance</td> <td>Email</td> <td>Adresse</td> <td>Numero Telephone</td> <td>Code Postal</td><td>Nationnalite</td><td>Modification</td><td>Suppression</td></tr>
+
+    {% for b in BabySitters %}
+        <tr>
+            <td> {{ b.nom }}</td>
+            <td> {{ b.prenom }}</td>
+            <td> {{ b.sex }}</td>
+            <td> {{ b.dateDeNaissance }}</td>
+            <td> {{ b.email }}</td>
+            <td> {{ b.adresse }}</td>
+            <td> {{ b.numeroTel }}</td>
+            <td> {{ b.codePostal }}</td>
+            <td> {{ b.nationalite }}</td>
+            
+            <td><a href="{{ path('modifier_babySitter',{id:b.iduser}) }}" target="_blank">modifier</a></td>
+            <td><a href="{{ path('supprimer_babySitter',{id:b.iduser}) }}" target="_blank">supprimer</a></td>
+
+        </tr>
+    {% else %}
+    <strong> La liste des BabySitters est vide </strong>
+    {% endfor %}
+</table>

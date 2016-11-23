@@ -1,0 +1,20 @@
+{# empty Twig template #}
+<h1></h1>
+<Table border="1">
+    <tr> <td>Titre</td> <td>Description</td> <td>Disponibilite</td> <td>Date</td><td>Modification</td><td>Suppression</td></tr>
+
+    {% for a in Annonces %}
+        <tr>
+            <td> {{ a.titreAnnonce }}</td>
+            <td> {{ a.description }}</td>
+            <td> {{ a.disponibilite }}</td>
+            <td> {{ a.annonceDate }}</td>
+                        
+            <td><a href="{{ path('modifier_annonce',{id:a.idAnnonce}) }}" target="_blank">modifier</a></td>
+            <td><a href="{{ path('supprimer_annonce',{id:a.idAnnonce}) }}" target="_blank">supprimer</a></td>
+
+        </tr>
+    {% else %}
+    <strong> La liste des Annonces est vide </strong>
+    {% endfor %}
+</table>

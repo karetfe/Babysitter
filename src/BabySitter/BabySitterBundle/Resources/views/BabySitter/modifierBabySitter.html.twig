@@ -1,0 +1,47 @@
+{# empty Twig template #}
+<form method="POST" action="{{ path('modifier_babySitter',{id:babySitters.iduser}) }}">
+    <h2>Modifier BabySitter </h2>
+    <table>
+        <tr>
+            <td>Nom : </td>
+            <td>{{ form_widget(form.nom) }}</td>
+        </tr>
+        <tr>
+            <td>Prenom : </td>
+            <td>{{ form_widget(form.prenom) }} </td>
+        </tr>
+        <tr>
+            <td>Date De Naissance : </td>
+            <td>{{ form_widget(form.dateDeNaissance) }} </td>
+        </tr>
+        <tr>
+            <td>Sex : </td>
+            <td>{{ form_widget(form.sex) }} </td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td>{{ form_widget(form.email) }} </td>
+        </tr>
+        <tr>
+            <td>Adresse : </td>
+            <td>{{ form_widget(form.adresse) }} </td>
+        </tr>
+        <tr>
+            <td>Numero Telephone : </td>
+            <td>{{ form_widget(form.numeroTel) }} </td>
+        </tr>
+        <tr>
+            <td>code Postal : </td>
+            <td>{{ form_widget(form.codePostal) }} </td>
+        </tr>
+        <tr>
+            <td>Nationalite : </td>
+            <td>{{ form_widget(form.nationalite) }} </td>
+        </tr>
+        <tr>
+            <td>     <input type="submit" value="Modifier" name="modifier"/> </td>
+            <td></td>
+        </tr>
+    </table>
+    {{ form_rest(form) }}
+</form>

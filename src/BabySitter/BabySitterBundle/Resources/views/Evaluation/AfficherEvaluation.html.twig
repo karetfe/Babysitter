@@ -1,0 +1,20 @@
+{% extends "BabySitterBundle::layout.html.twig" %}
+{% block qualite %}
+<h1></h1>
+<Table border="1">
+    <tr> <td>BabySitter</td><td>Note</td><td>Date</td> <td>Description</td><td>Modification</td><td>Suppression</td></tr>
+{% for a in Evaluations %}
+        <tr>
+            <td> {{ a.iduser.nom }}</td>
+            <td> {{ a.note }}</td>
+            <td> {{ a.date|date("m/d/Y") }}</td>
+            <td> {{ a.description }}</td>
+            <td><a href="{{ path('modifier_evaluation',{id:a.idEvaluation}) }}" target="_blank">modifier</a></td>
+            <td><a href="{{ path('supprimer_evaluation',{id:a.idEvaluation}) }}" target="_blank">supprimer</a></td>
+
+        </tr>
+    {% else %}
+    <strong> La liste des Evaluations est vide </strong>
+    {% endfor %}
+</table>
+{% endblock %}
